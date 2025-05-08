@@ -1,0 +1,29 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >-
+  Automated Vendor Risk Assessment via OpenAI + Jira
+
+Globals:
+  Function:
+    Timeout: 30
+    Runtime: python3.11
+    MemorySize: 256
+
+Resources:
+  VendorRiskAnalyzerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: lambda_function.lambda_handler
+      Description: "Analyzes vendor data and posts results to Jira"
+      Environment:
+        Variables:
+          OPENAI_API_KEY: "{{resolve:secretsmanager:OPENAI_API_KEY}}"
+          JIRA_API_TOKEN: "{{resolve:secretsmanager:JIRA_API_TOKEN}}"
+          JIRA_SITE: "{{resolve:secretsmanager:JIRA_SITE}}"
+      Events:
+        Webhook:
+          Type: Api
+          Properties:
+            Path: /api/vendor-risk-analyzer
+            Method: post
