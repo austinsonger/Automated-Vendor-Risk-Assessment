@@ -4,8 +4,9 @@
 This project automates vendor risk assessments by using OpenAI Deep Research Model to analyze structured vendor data submitted through Jira Service Management. Upon receiving a webhook from Jira, it builds a custom AI prompt, runs the assessment, and posts the results back to the Jira ticket.
 
 
-[Vendor Example - Google Workspace](#-vendor-example)
+## Example Output
 
+[Vendor Example - Google Workspace](#-vendor-example)
 
 
 ---
