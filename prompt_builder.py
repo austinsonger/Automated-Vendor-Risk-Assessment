@@ -103,13 +103,13 @@ You are an expert vendor risk analyst. Use the information below to perform a co
 ---
 
 🔗 12. External Sources and Supporting Links
-Please include direct URLs to relevant vendor documents or pages:
-- SOC 2 Type II Report (if public)
-- ISO 27001 Certification
-- Any known breach disclosures or incident response summaries
-- Trust Center or Security Practices
-- Privacy Policy and Compliance Documentation
+Provide direct URLs to relevant vendor documentation, if available.
 
+- SOC 2 Type II Report: {val("vendor_soc2_link")}
+- ISO 27001 Certification: {val("vendor_iso27001_link")}
+- Breach Disclosure Report: {val("vendor_breach_link")}
+- Security Practices / Trust Center: {val("vendor_security_page")}
+- Privacy Policy or Compliance Statement: {val("vendor_privacy_policy")}
 
 ---
 
