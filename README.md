@@ -309,6 +309,6 @@ JIRA_SITE=https://yourcompany.atlassian.net
 
 ## 👨‍💻 Author
 
-Created by Austin Songer
-Contact: austin@songer.me
-License: MIT
+- Created by Austin Songer
+- Contact: austin@songer.me
+- License: MIT
