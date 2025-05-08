@@ -83,7 +83,7 @@ In **Jira Project Settings > Automation**:
 ## 📁 Project Structure
 
 ```
-vendor-risk-analyzer/
+Automated-Vendor-Risk-Assessment/
 ├── lambda_function.py           # AWS Lambda entry point
 ├── prompt_builder.py            # Builds structured GPT-4 prompt
 ├── format_response.py           # Optional output cleanup
